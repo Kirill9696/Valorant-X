@@ -24,6 +24,9 @@ header{
     width: 100%;
     background-color: black;
 }
+.mobile-icon{
+    height: 20px;
+}
 .main{
     padding: 120px 20%;
     text-align: center;
