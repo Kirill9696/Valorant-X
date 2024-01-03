@@ -12,6 +12,7 @@
 header{
     padding: 5px 60px;
     background-color: black;
+    width: 100%;
 }
 .mobile {
     display: flex;
@@ -23,9 +24,6 @@ header{
     padding: 10px;
     width: 100%;
     background-color: black;
-}
-.mobile-icon{
-    height: 20px;
 }
 .main{
     padding: 120px 20%;
@@ -67,6 +65,12 @@ footer{
 .heading{
     margin-bottom: 150px;
 }
+.mobile-icon{
+    height: 20px;
+}
+.info-img{
+    width: 300px;
+}
 .name{
     color: #f72133;
     font-size: 100px;
@@ -84,5 +88,8 @@ li{
     }
     footer{
         padding-bottom: 130px;
+    }
+    .info-img{
+        width: 80%;
     }
 }
