@@ -6,6 +6,7 @@ function repeat() {
     agentFull.innerHTML =``;
     agentName.innerHTML =``;
     agentName.classList.remove(`agent-name-active`);
+    agentName.classList.remove(`agent-name-active-s`);
     agentFull.classList.remove(`agent-full-active`)
 }
 
@@ -50,7 +51,7 @@ breachNode.addEventListener(`mouseout`, repeat)
 brimstoneNode.addEventListener(`mouseover`, function() {
     agentFull.innerHTML += `<img src="assets/agents/brimstone.png" alt="" class="agent-full">`;
     agentName.innerHTML += `<img src="assets/agents/brimstone-n.png" alt="">`;
-    agentName.classList.add(`agent-name-active`);
+    agentName.classList.add(`agent-name-active-s`);
     agentFull.classList.add(`agent-full-active`)
 })
 brimstoneNode.addEventListener(`mouseout`, repeat)
@@ -58,7 +59,7 @@ chamberNode.addEventListener(`mouseover`, function() {
     agentFull.innerHTML += `<img src="assets/agents/chamber.png" alt="" class="agent-full">`;
     agentName.innerHTML += `<img src="assets/agents/chamber-n.png" alt="">`;
     agentName.classList.add(`agent-name-active`);
-    agentFull.classList.add(`agent-full-active`)
+    agentFull.classList.add(`agent-full-active`);
 })
 chamberNode.addEventListener(`mouseout`, repeat)
 cypherNode.addEventListener(`mouseover`, function() {
@@ -71,7 +72,7 @@ cypherNode.addEventListener(`mouseout`, repeat)
 deadlockNode.addEventListener(`mouseover`, function() {
     agentFull.innerHTML += `<img src="assets/agents/deadlock.png" alt="" class="agent-full">`;
     agentName.innerHTML += `<img src="assets/agents/deadlock-n.png" alt="">`;
-    agentName.classList.add(`agent-name-active`);
+    agentName.classList.add(`agent-name-active-s`);
     agentFull.classList.add(`agent-full-active`)
 })
 deadlockNode.addEventListener(`mouseout`, repeat)
