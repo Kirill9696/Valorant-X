@@ -97,6 +97,10 @@ footer{
     transition: 2s;
     top: 280px;
 }
+.agent-name-active-s{
+    transition: 2s;
+    top: 160px;
+}
 .name{
     color: #f72133;
     font-size: 100px;
