@@ -92,4 +92,8 @@ li{
     .info-img{
         width: 80%;
     }
+    .name{
+        font-size: 50px;
+        font-weight: 700;
+    }
 }
