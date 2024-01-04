@@ -1,6 +1,6 @@
 *{
     margin: 0;
-    text-decoration: none;
+    text-decoration: none !important;
     color: white;
     font-family: 'Roboto Condensed';
 }
@@ -14,7 +14,7 @@ header{
     background-color: black;
     width: 100%;
 }
-.mobile {
+.mobile{
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -24,6 +24,7 @@ header{
     padding: 10px;
     width: 100%;
     background-color: black;
+    z-index: 100;
 }
 .main{
     padding: 120px 20%;
@@ -59,28 +60,70 @@ footer{
     text-decoration: none;
     color: white;
 }
-.go:hover{
-    text-decoration: underline;
-}
-.heading{
-    margin-bottom: 150px;
-}
 .mobile-icon{
     height: 20px;
 }
-.info-img{
-    width: 300px;
+.agents{
+    display: flex;
+    width: 75%;
+    flex-wrap: wrap;
+    margin: 70px 0px 70px 0px;
+    justify-content: center;
+}
+.agent-img{
+    width: 100px;
+}
+.agent{
+    margin: 5px;
+    border: 1px solid #f53b4a;
+    position: relative;
+}
+.info{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+}
+.agent-full{
+    height: 540px;
+    width: 350px;
+    position: absolute;
+    top: 240px;
+    right: 20px;
+}
+.agent-full-active{
+    transition: 2s;
+    top: 40px;
+}
+.agent-name{
+    position: absolute;
+    left: 60px;
+    top: 140px;
+}
+.agent-name-active{
+    transition: 2s;
+    top: 280px;
+}
+.class{
+    width: 40px;
+    display: block;
 }
 .name{
     color: #f72133;
     font-size: 100px;
     font-weight: 1000;
 }
-.info {
-    margin-bottom: 200px;
-}
 li{
     list-style-type: none;
+}
+@media (max-width:1400px) {
+    .agents{
+        width: 70%;
+    }
+}
+@media (max-width:1100px) {
+    .agents{
+        width: 90%;
+    }
 }
 @media (max-width:768px) {
     .main{
@@ -89,7 +132,7 @@ li{
     footer{
         padding-bottom: 130px;
     }
-    .info-img{
-        width: 80%;
+    .agents{
+        width: 100%;
     }
 }
